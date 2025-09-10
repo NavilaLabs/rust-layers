@@ -2,9 +2,9 @@
   "name": "rust-lib",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "workspaceFolder": "/workspaces/rust-lib",
+  "workspaceFolder": "/workspaces/logica",
   "remoteUser": "navila",
-  "initializeCommand": "chmod +x ./.devcontainer/initialize.sh && ./.devcontainer/initialize.sh",
+  "initializeCommand": "chmod +x ./.devcontainer/init.sh && ./.devcontainer/init.sh",
   "postStartCommand": "chmod +x ./.devcontainer/post_start.sh && ./.devcontainer/post_start.sh",
   "customizations": {
     "vscode": {

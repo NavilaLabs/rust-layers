@@ -4,8 +4,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 RUN apt-get update && apt-get install -y \
   build-essential \
   curl \
-  wget \
-  pkg-config
+  wget
 
 # Install rust-analyzer (latest release)
 RUN curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-$(uname -m)-unknown-linux-gnu.gz \
@@ -29,6 +28,3 @@ ENV PATH="/home/navila/.cargo/bin:${PATH}"
 # Finish Rust setup
 RUN rustup toolchain install stable \
  && rustup target add wasm32-unknown-unknown
-
-RUN cargo install cargo-tarpaulin
-RUN cargo install --locked --git https://github.com/j178/prek
