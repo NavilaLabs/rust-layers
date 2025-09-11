@@ -4,11 +4,7 @@
   "service": "app",
   "workspaceFolder": "/workspaces/logica",
   "remoteUser": "navila",
-<<<<<<< HEAD
   "initializeCommand": "chmod +x ./.devcontainer/initialize.sh && ./.devcontainer/initialize.sh",
-=======
-  "initializeCommand": "chmod +x ./.devcontainer/init.sh && ./.devcontainer/init.sh",
->>>>>>> 6702453 (Create devcontainer.json)
   "postStartCommand": "chmod +x ./.devcontainer/post_start.sh && ./.devcontainer/post_start.sh",
   "customizations": {
     "vscode": {
