@@ -1,3 +1,8 @@
+mod commands;
+mod queries;
+mod handlers;
+mod services;
+
 pub fn add(left: u64, right: u64) -> u64 {
     left + right
 }
